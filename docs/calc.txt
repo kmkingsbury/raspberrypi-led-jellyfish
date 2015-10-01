@@ -1,0 +1,14 @@
+Calculator
+
+NPN Specs:
+Vbe = 0.6
+Vce = 0.3
+hFE = 50
+
+
+RL = 150
+Vcc = 12
+Vi  = 3.3
+
+Rb = 576.9
+
