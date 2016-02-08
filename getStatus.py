@@ -66,9 +66,13 @@ elif str(resp['repo']['last_build_state']) == 'passed':
     print "pass"
 elif str(resp['repo']['last_build_state']) == 'failed':
     print "fail"
+elif str(resp['repo']['last_build_state']) == 'errored': # such as repo doesnt exist
+    print "fail"
 elif str(resp['repo']['last_build_state']) == 'started':
-        print "building"
-elif str(resp['repo']['last_build_state']) == 'building': # not sure this is correct
-    print "build"
+    print "building"
+elif str(resp['repo']['last_build_state']) == 'created': # job queued
+    print "building"
+elif str(resp['repo']['last_build_state']) == 'canceled': #
+    print "build cancled"
 else:
     print "unknown: "+str(resp['repo']['last_build_state'])
