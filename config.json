@@ -1,0 +1,12 @@
+{
+  "domain": "www.example.com",
+  "mongodb": {
+    "host": "localhost",
+    "port": 27017
+  },
+  "tentacle":[
+	{"Name": "API", "Number":1, "URL":"https://api.travis-ci.org/repos/kmkingsbury/api"},
+	{"Name": "", "Number":2, "URL":""},
+	{"Name": "", "Number":3, "URL":""}
+  ]
+}
